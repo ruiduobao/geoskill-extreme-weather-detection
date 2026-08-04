@@ -1,0 +1,63 @@
+{
+  "skill": "extreme-weather-detection",
+  "skill_version": "1.0.0",
+  "command": "extreme-weather-detection --bbox 116 39 117 40 --synthetic --variable precipitation --threshold p99 --n-dates 30 --quiet --output-dir ./_test_cli_rain",
+  "started_at": "2026-08-03T16:59:47.262352Z",
+  "finished_at": "2026-08-03T16:59:48.477737Z",
+  "exit_code": 0,
+  "inputs": {
+    "input": null,
+    "variable": "precipitation",
+    "threshold": "p99",
+    "synthetic": true
+  },
+  "aoi": null,
+  "datasets": [],
+  "outputs": [
+    {
+      "path": "./_test_cli_rain\\extreme_events.tif",
+      "kind": "raster",
+      "size_bytes": null,
+      "crs_epsg": 4326,
+      "bbox_wgs84": [
+        116.0,
+        39.0,
+        117.0,
+        40.0
+      ],
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": 2,
+      "feature_count": null,
+      "row_count": null
+    },
+    {
+      "path": "./_test_cli_rain\\event_list.json",
+      "kind": "json",
+      "size_bytes": null,
+      "crs_epsg": null,
+      "bbox_wgs84": null,
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": null,
+      "feature_count": null,
+      "row_count": null
+    }
+  ],
+  "qa": {
+    "source": "synthetic",
+    "variable": "precipitation",
+    "threshold": "p99",
+    "n_events": 3412,
+    "total_exceedance_pixel_days": 4096,
+    "min_duration": 1,
+    "n_valid_pixel_steps": 122880,
+    "n_total_pixel_steps": 122880,
+    "strongest_peak_intensity": 0.8218936920166016
+  },
+  "software": {
+    "python": "3.9.21",
+    "skill": "extreme-weather-detection"
+  },
+  "error": null
+}

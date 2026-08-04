@@ -1,0 +1,63 @@
+{
+  "skill": "extreme-weather-detection",
+  "skill_version": "1.0.0",
+  "command": "extreme-weather-detection --bbox 116 39 117 40 --synthetic --variable temperature --threshold p90 --n-dates 30 --quiet --output-dir ./_test_cli_hw",
+  "started_at": "2026-08-03T16:59:45.486138Z",
+  "finished_at": "2026-08-03T16:59:47.114808Z",
+  "exit_code": 0,
+  "inputs": {
+    "input": null,
+    "variable": "temperature",
+    "threshold": "p90",
+    "synthetic": true
+  },
+  "aoi": null,
+  "datasets": [],
+  "outputs": [
+    {
+      "path": "./_test_cli_hw\\extreme_events.tif",
+      "kind": "raster",
+      "size_bytes": null,
+      "crs_epsg": 4326,
+      "bbox_wgs84": [
+        116.0,
+        39.0,
+        117.0,
+        40.0
+      ],
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": 2,
+      "feature_count": null,
+      "row_count": null
+    },
+    {
+      "path": "./_test_cli_hw\\event_list.json",
+      "kind": "json",
+      "size_bytes": null,
+      "crs_epsg": null,
+      "bbox_wgs84": null,
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": null,
+      "feature_count": null,
+      "row_count": null
+    }
+  ],
+  "qa": {
+    "source": "synthetic",
+    "variable": "temperature",
+    "threshold": "p90",
+    "n_events": 125,
+    "total_exceedance_pixel_days": 12288,
+    "min_duration": 3,
+    "n_valid_pixel_steps": 122880,
+    "n_total_pixel_steps": 122880,
+    "strongest_peak_intensity": 2.9018821716308594
+  },
+  "software": {
+    "python": "3.9.21",
+    "skill": "extreme-weather-detection"
+  },
+  "error": null
+}

@@ -1,0 +1,17 @@
+name: geoskill-extreme-weather-detection
+display_name: 极端天气事件检测
+description: |
+  基于百分位阈值检测热浪、寒潮与暴雨等极端天气事件，统计强度、持续时间与空间范围，输出事件清单 JSON 与空间分布栅格。Percentile-threshold detection of heatwaves, cold spells, and heavy rainfall, reporting intensity, duration, and spatial extent with an event-list JSON and spatial raster.
+version: 0.1.0
+author: Mavis
+entrypoint: geoskill-extreme-weather-detection.py
+runtime: python>=3.9
+tags:
+  - ai
+  - climate
+  - extraction
+  - gis
+  - raster
+  - remote-sensing
+  - urban
+  - weather
